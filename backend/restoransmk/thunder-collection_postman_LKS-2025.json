@@ -1,0 +1,453 @@
+{
+    "info": {
+        "_postman_id": "605f0eed-f01d-4f3e-bcc5-62f5633b8e5e",
+        "name": "LKS-2025",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/login/",
+                    "path": [
+                        "api",
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"username\":\"admin1\",\n  \"password\":\"admin\"\n\n}"
+                }
+            }
+        },
+        {
+            "name": "get all meja",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/meja/",
+                    "path": [
+                        "api",
+                        "meja"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY0NDU5LCJpYXQiOjE3NDQyNjQxNTksImp0aSI6Ijk2MGJkYTBjNzQzMDRhNjRiNjBmYzMwYzg1MTY3ZjY3IiwidXNlcl9pZCI6Mn0.C2eZN8y45847bO55DTE17EDo-7vzHoxanrbq1nlK-a8",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get meja by id",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/meja/1/",
+                    "path": [
+                        "api",
+                        "meja",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY0NDU5LCJpYXQiOjE3NDQyNjQxNTksImp0aSI6Ijk2MGJkYTBjNzQzMDRhNjRiNjBmYzMwYzg1MTY3ZjY3IiwidXNlcl9pZCI6Mn0.C2eZN8y45847bO55DTE17EDo-7vzHoxanrbq1nlK-a8",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "post /meja",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/meja/",
+                    "path": [
+                        "api",
+                        "meja"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"no_meja\":2,\n  \"kapasitas\":5,\n  \"status\": \"kosong\"\n}"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY0NDU5LCJpYXQiOjE3NDQyNjQxNTksImp0aSI6Ijk2MGJkYTBjNzQzMDRhNjRiNjBmYzMwYzg1MTY3ZjY3IiwidXNlcl9pZCI6Mn0.C2eZN8y45847bO55DTE17EDo-7vzHoxanrbq1nlK-a8",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "put /meja",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/meja/2/",
+                    "path": [
+                        "api",
+                        "meja",
+                        "2"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"no_meja\":2,\n  \"kapasitas\":3,\n  \"status\": \"kosong\"\n}"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY0Nzg4LCJpYXQiOjE3NDQyNjQ0ODgsImp0aSI6IjJkNmYwNzAxZmU0MjQzZGQ5MzU5NTc3OTBmN2IyNGIyIiwidXNlcl9pZCI6Mn0.uQ9xiGJukAPRFfszMRIUiTXxtczxpveOqAY9AVUYCTM",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "patch /meja",
+            "request": {
+                "method": "PATCH",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/meja/2/",
+                    "path": [
+                        "api",
+                        "meja",
+                        "2"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"no_meja\":2,\n  \"kapasitas\":10,\n  \"status\": \"kosong\"\n}"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY0Nzg4LCJpYXQiOjE3NDQyNjQ0ODgsImp0aSI6IjJkNmYwNzAxZmU0MjQzZGQ5MzU5NTc3OTBmN2IyNGIyIiwidXNlcl9pZCI6Mn0.uQ9xiGJukAPRFfszMRIUiTXxtczxpveOqAY9AVUYCTM",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "delete /meja ",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/meja/2/",
+                    "path": [
+                        "api",
+                        "meja",
+                        "2"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY0Nzg4LCJpYXQiOjE3NDQyNjQ0ODgsImp0aSI6IjJkNmYwNzAxZmU0MjQzZGQ5MzU5NTc3OTBmN2IyNGIyIiwidXNlcl9pZCI6Mn0.uQ9xiGJukAPRFfszMRIUiTXxtczxpveOqAY9AVUYCTM",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get /menu",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/menu/",
+                    "path": [
+                        "api",
+                        "menu"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY1MTE3LCJpYXQiOjE3NDQyNjQ4MTcsImp0aSI6IjhiOWY5YWUxMDZhNTRmMmFiN2VlZmJlM2NhZTc5YzQzIiwidXNlcl9pZCI6Mn0.501-0sbSNGOG45KJd1EQkWpRbAasBfdzYLpA7oTNwuw",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get /menu by id",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/menu/1/",
+                    "path": [
+                        "api",
+                        "menu",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY1MTE3LCJpYXQiOjE3NDQyNjQ4MTcsImp0aSI6IjhiOWY5YWUxMDZhNTRmMmFiN2VlZmJlM2NhZTc5YzQzIiwidXNlcl9pZCI6Mn0.501-0sbSNGOG45KJd1EQkWpRbAasBfdzYLpA7oTNwuw",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "register user (default status = pelanggan)",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/registrasi/",
+                    "path": [
+                        "api",
+                        "registrasi"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"username\":\"sas\",\n  \"password\":\"testing\",\n  \"email\":\"admin@a.com\",\n  \"no_hp\":\"+629393939\",\n  \"alamat\":\"Sleman\"\n}"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY1MTE3LCJpYXQiOjE3NDQyNjQ4MTcsImp0aSI6IjhiOWY5YWUxMDZhNTRmMmFiN2VlZmJlM2NhZTc5YzQzIiwidXNlcl9pZCI6Mn0.501-0sbSNGOG45KJd1EQkWpRbAasBfdzYLpA7oTNwuw",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get all user",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/user/",
+                    "path": [
+                        "api",
+                        "user"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY1NTg3LCJpYXQiOjE3NDQyNjUyODcsImp0aSI6ImI1OTRmNWZkOTFhNjQ0MDliNTNmZmQ0MDc0NGY3Y2UxIiwidXNlcl9pZCI6Mn0.Iut1hknN-0EEVkII3lh5v5jY7lrhsp7r4ZL7KqSzpx4",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get all transaksi",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/transaksi/",
+                    "path": [
+                        "api",
+                        "transaksi"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY1NTg3LCJpYXQiOjE3NDQyNjUyODcsImp0aSI6ImI1OTRmNWZkOTFhNjQ0MDliNTNmZmQ0MDc0NGY3Y2UxIiwidXNlcl9pZCI6Mn0.Iut1hknN-0EEVkII3lh5v5jY7lrhsp7r4ZL7KqSzpx4",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "get all transaksi detail",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://127.0.0.1:8000/api/transaksidetail/",
+                    "path": [
+                        "api",
+                        "transaksidetail"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "127",
+                        "0",
+                        "0",
+                        "1"
+                    ],
+                    "port": "8000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ0MjY1NTg3LCJpYXQiOjE3NDQyNjUyODcsImp0aSI6ImI1OTRmNWZkOTFhNjQ0MDliNTNmZmQ0MDc0NGY3Y2UxIiwidXNlcl9pZCI6Mn0.Iut1hknN-0EEVkII3lh5v5jY7lrhsp7r4ZL7KqSzpx4",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
