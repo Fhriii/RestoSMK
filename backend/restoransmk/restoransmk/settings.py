@@ -28,9 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-MIDTRANS_SERVER_KEY = 'SB-Mid-server-hO4R_wQi9-VfweFKbnE1fZpn'
-MIDTRANS_CLIENT_KEY = 'SB-Mid-client-pbPgb0acxNIo8Zao'
-MIDTRANS_SNAP_URL = 'https://app.sandbox.midtrans.com/snap/v1/transactions'
+
 
 MEDIA_URL ='/'
 MEDIA_ROOT = BASE_DIR
